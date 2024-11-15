@@ -1,0 +1,52 @@
+:root {
+  --sc-divider-light: hsla(0, 0%, 55%, 0.42);
+  --sc-bg: #fff;
+  --search-searchbox-background: #ebedf0;
+
+  --text-link: #d1e8f3ed;
+
+  --header-bg: hsla(0, 0%, 100%, 0.5);
+
+  --header-blur: blur(20px) saturate(1.5);
+  --color-text: #32302e;
+  --hue: 223;
+  --bg: hsl(var(--hue), 10%, 90%);
+  --fg: hsl(var(--hue), 10%, 10%);
+  --primary: hsl(var(--hue), 90%, 50%);
+  --trans-dur: 0.3s;
+  --trans-timing: cubic-bezier(0.76, 0.05, 0.24, 0.95);
+  --trans-timing-in: cubic-bezier(0.76, 0.05, 0.86, 0.06);
+  --trans-timing-out: cubic-bezier(0.05, 0.76, 0.06, 0.86);
+
+  // ------------------------------
+  //
+
+  &[data-theme="dark"] {
+    --text-link: rgba(43, 69, 85, 1);
+    --header-bg: #0d0d1050;
+    --color-text: #dadfe7;
+    --color-text-secondary: #dbdada;
+    --color-background: #0f0d0c;
+    --color-nav-background: #00000063;
+    --color-muted: #2c2d2dbb;
+    --color-heading-primary: #fff;
+    --color-heading-secondary: #50fa7b;
+    --color-link-posts: #d63369;
+    --sc-bg: #111;
+    --sc-divider-light: hsla(0, 0%, 78%, 0.12);
+    --sc-divider-dark: hsla(0, 0%, 78%, 0.48);
+    --syntax-background: #161616;
+    --syntax-comment: grey;
+    --syntax-text: #ccc;
+    --syntax-operator: #ececec;
+    --syntax-string: #a6a6a6;
+    --syntax-number: #999;
+    --syntax-primary: #acacac;
+    --syntax-keyword: #e0e0e0;
+    --syntax-html-tag: #adadad;
+    --syntax-boolean: #ccc;
+    --search-searchbox-background: #283035;
+    --search-muted-color: #939fb4;
+    --search-text-color: #d3dae6;
+  }
+}
