@@ -1,5 +1,6 @@
 import type { RouteRecordRaw } from "vue-router";
 import { createRouter, createWebHistory } from "vue-router";
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
@@ -15,9 +16,6 @@ const routes: Array<RouteRecordRaw> = [
         path: "/posts",
         name: "posts",
         component: () => import("@/views/posts/index.vue")
-        // children: [
-
-        // ]
       },
       {
         path: "/:postName",
