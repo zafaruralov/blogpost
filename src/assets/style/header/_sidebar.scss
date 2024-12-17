@@ -1,53 +1,55 @@
 .profile {
-	&-header {
-		display: flex;
-		align-items: center;
-		gap: 96px;
-		// position: sticky;
-		// top: 0;
-		position: fixed;
-		background: var(--header-bg);
-		backdrop-filter: var(--header-blur);
+  &-header {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    padding: 15px;
+    z-index: 10;
+    // position: sticky;
+    top: 0;
+    position: fixed;
+    background: var(--header-bg);
+    backdrop-filter: var(--header-blur);
 
-		&__header {
-			line-height: 16px;
-			font-size: 8px;
-			font-weight: 600;
-			color: var(--color-text);
-		}
-		&__wrapper {
-			display: flex;
-			flex: 1;
-			align-items: center;
-			gap: 96px;
-		}
-		&__actions {
-			display: flex;
-			justify-content: center;
-			flex: 1;
-			gap: 32px;
+    &__header {
+      line-height: 16px;
+      font-size: 8px;
+      font-weight: 600;
+      color: var(--color-text);
+    }
+    &__wrapper {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      gap: 96px;
+    }
+    &__actions {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      gap: 32px;
 
-			&-posts {
-				font-size: 16px;
-				line-height: 24px;
-				opacity: 0.5;
-				font-weight: 600;
-				cursor: pointer;
-			}
-		}
-		&__search input {
-			width: 100%;
-			background: var(--search-searchbox-background);
-			border: none;
-			border-radius: 8px;
-			padding: 4px 8px;
+      &-posts {
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 0.5;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+    &__search input {
+      width: 100%;
+      background: var(--search-searchbox-background);
+      border: none;
+      border-radius: 8px;
+      padding: 4px 8px;
 
-			font-family: inherit;
-			font-weight: 400;
-			font-size: 14px;
-			line-height: 20px;
-			color: var(--search-text-color);
-			outline: none;
-		}
-	}
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--search-text-color);
+      outline: none;
+    }
+  }
 }

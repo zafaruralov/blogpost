@@ -12,5 +12,14 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: ["@tinymce/tinymce-vue", "tinymce"]
+  },
+  server: {
+    port: 4000,
+    proxy: {
+      "/posts": {
+        changeOrigin: true,
+        target: "http://localhost:3000"
+      }
+    }
   }
 });

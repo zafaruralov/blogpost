@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/vue-query": "^5.62.2",
     "@tinymce/tinymce-vue": "^5.1.1",
+    "axios": "^1.7.9",
     "path": "^0.12.7",
     "sass": "^1.80.7",
     "tinymce": "^7.5.1",

@@ -1,0 +1,57 @@
+.post {
+  padding: 100px 0 300px 0;
+}
+.proxy {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  &-life__first {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &-title {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: center;
+    }
+    &-example {
+    }
+  }
+  &-life__second {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &-title {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &-coding {
+      &-sorry {
+        position: absolute;
+        z-index: 2;
+        right: 12px;
+        bottom: 12px;
+        opacity: 0.6;
+      }
+    }
+  }
+}
+.titles {
+  font-size: 18px;
+  line-height: 28px;
+}
+.code {
+  position: relative;
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+}

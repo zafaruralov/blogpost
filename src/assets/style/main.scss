@@ -1,5 +1,7 @@
+@use "./base/base";
+@use "./base/keyframe";
 @use "./header/sidebar";
 @use "./components/switch";
 @use "./views/introduction";
 @use "./views/posts";
-@use "./base/base";
+@use "./views/post";

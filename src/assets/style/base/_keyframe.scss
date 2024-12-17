@@ -1,0 +1,16 @@
+mark {
+  animation: highlight linear forwards;
+  animation-timeline: view(60% 20%);
+  background: linear-gradient(to right, rgba(43, 69, 85, 1) 50%, rgba(43, 69, 85, 0) 50%);
+  color: var(--color-text);
+  background-position: 50%;
+  background-size: 200% 100%;
+  border-radius: 2px;
+  padding-inline: 5px;
+}
+
+@keyframes highlight {
+  to {
+    background-position: 0;
+  }
+}

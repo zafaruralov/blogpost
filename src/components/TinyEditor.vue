@@ -21,6 +21,7 @@
 import { ref } from "vue";
 import Editor from "@tinymce/tinymce-vue";
 import editorConfig from "../config/editorConfig";
+import { useMutate } from "@/hooks/useQuery";
 
 const editorContent = ref<string>("");
 
@@ -30,16 +31,16 @@ function updateContent(content: string) {
   editorContent.value = content;
 }
 
+const mutation = useMutate({});
+
 function saveAsJson() {
-  const blob = new Blob([JSON.stringify({ content: editorContent.value })], {
-    type: "application/json"
+  const jsonData = JSON.stringify({ content: editorContent.value });
+
+  mutation.mutate({
+    method: "post",
+    link: "",
+    data: { content: editorContent.value }
   });
-  const link = document.createElement("a");
-  link.href = URL.createObjectURL(blob);
-  link.download = "post.json";
-  link.click();
-  URL.revokeObjectURL(link.href);
-  console.log("Content saved as JSON.");
 }
 
 async function loadJson() {
